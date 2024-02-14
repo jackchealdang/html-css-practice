@@ -1,0 +1,53 @@
+* {
+  font-family: Outfit;
+}
+
+#root {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+height: 100%;
+}
+
+audio {
+  position: absolute;
+  bottom: 20px;
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btns-container button {
+  margin: 0 20px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-yes {
+  background-color: #EFAFD8;
+}
+
+.btn-no {
+  background-color: #E36AA5;
+}
+
+.btn-no .clicked {
+
+}

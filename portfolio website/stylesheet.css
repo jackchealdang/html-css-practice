@@ -83,6 +83,11 @@ a {
 
 .icon-container img {
   width: 7%;
+  transition: 0.3s;
+}
+
+.icon-container img:hover{
+  scale: 1.05;
 }
 
 /* header * {
@@ -104,7 +109,7 @@ a {
 }
 
 .nav-links li {
-  margin: 0 25px;
+  margin: 0 20px;
 }
 
 .nav-name {
@@ -119,6 +124,14 @@ a {
   justify-content: flex-end;
 }
 
+a.link{
+  transition: 0.3s ease-in-out;
+}
+
+a.link:hover{
+  color:#4675f7;
+}
+
 button {
   color: black;
   background-color: #fbe850;
@@ -127,13 +140,41 @@ button {
   font-size: 1.1em;
   padding: 15px 25px;
   cursor: pointer;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.action_button {
+  display:flex;
+  color: black;
+  background-color: #fbe850;
+  border: none;
+  font-family: Prata;
+  font-size: 1.1em;
+  padding: 3px 25px;
+  width:120px;
+  align-items: center;
+  height: 55px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
 }
 
 button:hover {
-  scale: 1.05;
+  background-color: #ffed68;
 }
 
 button:active{
+  scale:0.95;
+}
+
+.action_button:hover {
+  background-color: #ffed68;
+  scale:1.05;
+}
+
+.action_button:active{
   scale:0.95;
 }
 
@@ -146,7 +187,6 @@ button:active{
   flex: 1;
   width: 100%;
   justify-content: space-between;
-  margin: 30px 0;
 }
 
 .column-left {
@@ -172,6 +212,13 @@ button:active{
 .column-left img,
 .column-right img {
   width: 100%;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.column-left img:hover,
+.column-right img:hover {
+  scale: 1.05;
 }
 
 .column-left p,
@@ -227,8 +274,8 @@ footer {
   left: 3rem;
   right: 3rem;
   top: 80px;
-  background-color: #2e30387e;
-  backdrop-filter: blur(15px);
+  background-color: #2e3038;
+  /* backdrop-filter: blur(15px); */
   border-radius: 12px;
   list-style-type: none;
   overflow: hidden;
@@ -244,12 +291,17 @@ footer {
   /* margin-left: 20px; */
   display:flex;
   justify-content:center;
-  padding: 10px 30px 0;
+  padding: 5px 0px;
   text-align: center;
+}
+
+li a{
+  transition: color 0.3s ease-in-out;
 }
 
 li a:hover {
   color: #4675f7;
+  /* border-bottom: 1px solid #4675f7; */
 }
 
 .toggle_btn {
